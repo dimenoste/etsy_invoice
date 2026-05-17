@@ -1,0 +1,17 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+etsy_invoice_pdf/
+invoices/
+pdf/
+customers_out
+*.csv
+*.pdf
+*.xml
+
+# Virtual environments
+.venv
