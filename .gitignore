@@ -5,9 +5,6 @@ build/
 dist/
 wheels/
 *.egg-info
-etsy_invoice_pdf/
-invoices/
-pdf/
 customers_out
 *.csv
 *.pdf

@@ -6,6 +6,93 @@
 
 Pipeline transforms Etsy exports into invoices for personal accounting.
 
+## Etsy Input Files Required
+
+Two data sources are required to generate invoices correctly.
+
+---
+
+## 1. Etsy CSV Transaction Statements
+
+This file contains structured financial data for all orders.
+
+It is used to extract:
+
+- order IDs
+- revenue (sales)
+- transaction fees
+- processing fees
+- listing fees (if present)
+- advertising / marketing costs (if present)
+- tax amounts
+- timestamps / order dates
+
+This file is the **source of truth for all financial calculations**.
+
+---
+
+## 2. Etsy Client Invoice PDFs
+
+These are the official invoices sent to customers by Etsy.
+
+They are used to extract:
+
+- buyer name
+- buyer address
+- order reference number (order ID)
+
+These PDFs provide **customer identity information missing from the CSV**.
+
+---
+
+## Required Folder Structure
+
+All client invoice PDFs must be stored in the following directory:
+
+```text
+etsy_invoice_pdf/
+```
+
+---
+
+## File Naming Convention
+
+Each PDF must follow this exact format:
+
+```text
+order_<order_number>.pdf
+```
+
+---
+
+## Example
+
+Order number:
+
+```text
+0000012345
+```
+
+Correct file path:
+
+```text
+etsy_invoice_pdf/order_0000012345.pdf
+```
+
+---
+
+## Consistency Rules
+
+Each order must satisfy all of the following:
+
+- Exists in the CSV file
+- Has a corresponding PDF file
+- Uses the same order number in both sources
+- PDF filename matches the CSV order ID exactly
+
+If any mismatch exists, that order cannot be reliably processed for invoice generation.
+```
+
 Inputs:
 - Etsy Payments CSV (`etsy_payments.csv`)
 - Etsy PDF invoices (`./etsy_invoice_pdf/`)
