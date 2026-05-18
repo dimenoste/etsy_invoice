@@ -1,0 +1,8 @@
+﻿Date,Type,Title,Info,Currency,Amount,"Fees & Taxes",Net,"Tax Details"
+"April 30, 2026",Fee,"Transaction fee: Editable Valentine Gift","Order #123456789",EUR,--,-€0.17,-€0.17,--
+"April 30, 2026",Tax,"Sales tax paid by buyer","Order #123456789",EUR,--,-€0.25,-€0.25,--
+"April 30, 2026",Fee,"Processing fee","Order #123456789",EUR,--,-€0.41,-€0.41,--
+"April 30, 2026",Sale,"Payment for Order #123456789",,EUR,€4.18,--,€4.18,--
+"April 30, 2026",Fee,"Listing fee ($0.20 USD)","Listing #xxxxxxxxxx",EUR,--,-€0.17,-€0.17,--
+"April 30, 2026",Fee,"Listing fee ($0.20 USD)","Listing #xxxxxxxxxx",EUR,--,-€0.17,-€0.17,--
+"April 30, 2026",Marketing,"Etsy Ads","Bill for click-throughs to your shop on Apr 29, 2026",EUR,--,-€0.86,-€0.86,--
