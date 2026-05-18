@@ -91,7 +91,7 @@ Each order must satisfy all of the following:
 - PDF filename matches the CSV order ID exactly
 
 If any mismatch exists, that order cannot be reliably processed for invoice generation.
-```
+
 
 Inputs:
 - Etsy Payments CSV (`etsy_payments.csv`)
@@ -104,9 +104,9 @@ Outputs:
 
 ----
 
-***👉 Open the example PDF here :*** [View example PDF](example_generated_invoice/invoice_0000012345.pdf)
+***👉 Open the example PDF here :*** [View example PDF](etsy_invoice_pdf/order_123456789.pdf)
 -----
----
+
 
 ## 1. System Flow (Data Lineage)
 

@@ -9,6 +9,6 @@ customers_out
 *.csv
 *.pdf
 *.xml
-
+fake_pdf.py
 # Virtual environments
 .venv

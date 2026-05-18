@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<invoice order_id="123456789" schema="ANAF_RO_MIN">
+  <supplier>
+    <name>Your Legal Entity Name</name>
+    <vat_id>RO12345678</vat_id>
+    <reg_no>J00/000/2026</reg_no>
+    <address>Street, number, city, county</address>
+    <county>Cluj</county>
+    <city>Cluj-Napoca</city>
+    <country>Romania</country>
+    <bank>Your Bank</bank>
+    <iban>RO00XXXX0000000000000000</iban>
+    <email>you@example.com</email>
+    <phone>+40...</phone>
+    <capital_social>200</capital_social>
+  </supplier>
+  <client>
+    <name>Jon Jon</name>
+    <address>1668 Jump street, Alabama 5648, United States</address>
+  </client>
+  <meta>
+    <date>April 30, 2026</date>
+  </meta>
+  <items>
+    <item>
+      <name>Editable Valentine Gift</name>
+      <qty>1</qty>
+      <unit_price>4.18</unit_price>
+      <total>4.18</total>
+    </item>
+  </items>
+  <summary>
+    <subtotal>4.18</subtotal>
+    <transaction_fee>0.17</transaction_fee>
+    <processing_fee>0.41</processing_fee>
+    <sales_tax>0.25</sales_tax>
+    <net>3.35</net>
+    <total>4.18</total>
+  </summary>
+</invoice>
